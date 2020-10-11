@@ -36,6 +36,7 @@
     position: absolute;
     font-size: 2em;
     font-weight: bold;
+    color: black;
 }
 
 #XII {
@@ -59,21 +60,22 @@
 }
 
 .center {
-    width: 40px;
+    width: 38px;
     height: 40px;
     border-radius: 50%;
     position: absolute;
     top: calc(50% - 20px);
     left: calc(50% - 20px);
     background-color: black;
+    border: 1px solid lightgoldenrodyellow;
 }
 
 .hour {
-    width: 0px;
+    width: 18px;
     height: 100px;
     background-color: black;
     position: absolute;
-    border: 10px solid black;
+    border: 1px solid lightgoldenrodyellow;
     bottom: 50%;
     left: calc(50% - 10px);
     transform: rotate(0deg);
@@ -81,11 +83,11 @@
 }
 
 .minute {
-    width: 0px;
+    width: 8px;
     height: 150px;
     background-color: black;
     position: absolute;
-    border: 5px solid black;
+    border: 1px solid lightgoldenrodyellow;
     bottom: 50%;
     left: calc(50% - 5px);
     transform: rotate(0deg);
@@ -94,13 +96,29 @@
 
 
 .second {
-    width: 0px;
+    width: 4px;
     height: 200px;
     background-color: black;
     position: absolute;
-    border: 3px solid black;
+    border: 1px solid lightgoldenrodyellow;
     bottom: 50%;
     left: calc(50% - 3px);
     transform: rotate(0deg);
     transform-origin: bottom;
+}
+
+.digWindow {
+    position: absolute;
+    width: 24%;
+    height: 1.5em;
+    background-color: black;
+    color: lightgreen;
+    font-size: 1em;
+    border: 2px solid lightgoldenrodyellow;
+    box-shadow: -0.5px 1px 2px black;
+    bottom: 14%;
+    left: calc(38% - 1px);
+    text-align: center;
+    line-height: 1.5em;
+    z-index: 0;
 }
